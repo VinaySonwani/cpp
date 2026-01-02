@@ -1,0 +1,54 @@
+#include <iostream>
+
+struct Employee
+{
+    int id {};	// Using Value initialization here. We can do it. This is called Default Member Initialization. The value we provide here 
+    int age {};	// is called Default Member Initializer.
+    double wage {};
+};
+
+// Explicit initialization values take precedence over default values
+// Missing initializers in an initializer list when default values exist: Default Member Initializer is used.
+// We should always use default member Initializer so that no member is missed.
+
+int main()
+{
+	/*
+	In general programming, an aggregate data type (also called an aggregate) is any type that can contain multiple data members.       	Some types of aggregates allow members to have different types (e.g. structs), while others require that all members must be of 	a single type (e.g. arrays). In C++, the definition of an aggregate is narrower and quite a bit more complicated.
+
+	An aggregate in C++ is either a C-style array or a class type (struct, class, or union) that has:
+
+		No user-declared constructors.
+		No private or protected non-static data members.
+		No virtual functions.
+		The popular type std::array is also an aggregate.
+	*/
+
+	// Aggregates use Aggregate Initialization which directly initializes the member of Aggregates. Aggregate Initialisation uses 		// Initializer List as the initializer which is just a braced list of comma separated values. Each value is called the Initializer.
+	//  Aggregate Intialization does memberwise initialization. 
+	
+	Employee frank = { 1, 32, 60000.0 }; 		// Aggregate Initialization with an Initializer List using copy-list initialization.
+	Employee joe { 2, 28, 45000.0 };     		// Aggregate Initialization with an Initializer List using Direct list initialization.
+
+	// Assignment is also possible using the Initializer List.
+		
+	Employee moe;
+	moe = { 3, 34, 75000 };
+
+	// Missing initializers in an initializer list: Members would be initialized with whatever Default Initialization method they used during 	// Struct definition.
+
+	// Const structs: Must be initialized using any initialization method.
+
+	// Designated Initializers: C++20 feature
+
+    	return 0;
+}
+
+References:
+
+	https://www.learncpp.com/cpp-tutorial/struct-aggregate-initialization/
+	https://www.learncpp.com/cpp-tutorial/introduction-to-structs-members-and-member-selection/
+	https://www.learncpp.com/cpp-tutorial/default-member-initialization/
+
+
+

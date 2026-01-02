@@ -1,0 +1,11 @@
+
+/*
+
+Each class gets the Virtual Table.
+Virtual Table is a static Array where each element is a Function Pointer to the most derived function that the class can resolve.
+Only Base class has the Virtual Pointer *__vptr. All Derived classes inherit it.
+*__vptr automatically points to the Virtual Table of a class when the class is instantiated. 
+When we call a Virtual Function using Pointer or reference to the Base class of a Derived object, *__vptr points to the Virtual Table of the Derived class, and the Virtual Table helps resolve the correct function.
+
+*/
+

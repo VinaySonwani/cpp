@@ -1,0 +1,24 @@
+
+
+
+/*
+
+Variables are used to store the values.
+Variables can only store the values based on their Data Type.
+
+int var;			=> var is a variable which would store the value of int Data Type.
+char var2;		=> var2 is a variable which would store the value of char Data Type.
+float var3;			=> var3 is a variable which would store the value of float Data Type.
+
+
+Data storage units: Variable, Pointer & Object.
+
+Variables, Objects and Pointers are just entities pointing to the memory locations where actual allocation happens of the Data Types.
+
+Data Types have utmost importance. These decide the memory layout for the values to be stored. Then comes the memory allocation and based on it, the choice of using variable or Pointer.
+
+value -> data type selection for the value -> memory allocation selection -> variable/pointer selection.
+
+You have some value that you want to use -> you need to store it in the memory -> you need to reserve the memory for it -> this is done using declaration.
+
+*/

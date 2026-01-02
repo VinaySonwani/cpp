@@ -1,0 +1,2 @@
+
+A program executes sequentially. If it is to be in continues running state then there must be a hold point which is waiting for a input. In the absence of this point, program would execute and exit.

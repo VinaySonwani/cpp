@@ -1,0 +1,8 @@
+
+1. Declaration
+2. Assignment
+3. Initialization
+4. Access
+5. Insert element- front, back, at specific position
+6. Remove element - front, back, at specific position
+7. Reverse

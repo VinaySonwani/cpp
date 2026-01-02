@@ -1,0 +1,11 @@
+/*
+
+Every executable will have its own main function. All the classes would be instantiated from here.
+
+If you want to access an specific routine from multiple executables, that’s what libraries are used for.
+
+Classes of an executable can communicate with each other. If they belong to different executables then IPC is required.
+
+Always check which source file belong to which executable.
+
+*/

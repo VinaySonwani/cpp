@@ -1,0 +1,6 @@
+
+
+
+// Fn prototype 
+
+int __declspec(dllexport) add(int a, int b);

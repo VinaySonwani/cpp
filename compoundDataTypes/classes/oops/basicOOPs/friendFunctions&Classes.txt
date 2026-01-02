@@ -1,0 +1,84 @@
+#include <iostream>
+Using namespace std;
+
+class Class
+{
+	int i;
+public:
+	Class()
+	{
+		i = 1;
+	}
+	friend void print (const Class &obj2);	/* Friend Function. Declared here, defined outside the class. It can be declared under any access 													   specifier. Friend Function can access members belonging to any Access Specifiers. It's different than a Method in 
+									   the sense that it still requires a class type parameter to work. */
+
+	friend void show(const Class &obj3)	// Friend Function defined inside the class.									
+	{
+		cout << obj3.i << endl;
+	}
+}:
+
+void print(const Class &obj2)
+{
+	cout << obj2.i << endl;
+}
+
+
+int main()
+{
+	Class obj;
+	print(obj);
+	show(obj);
+	return 0;
+}
+
+/*
+
+// Multiple friends. A non-Member Function being friend of two classes simultaneously.
+
+#include <iostream>
+Using namespace std;
+
+Class Class4;		// Forward declaration of the class.
+class Class3
+{
+	int k;
+public:
+	Class3()
+	{
+		k =1;
+	}
+	friend void display(const Class3 &obj3, const Class4 &obj4);
+};
+
+class Class4
+{
+	int m;
+public:
+	Class4()
+	{	
+		m = 2; 
+	}
+	friend void display(const Class3 &obj3, const Class4 &obj4);
+};
+
+void display(const Class3 &obj3, const Class4 &obj4)
+{
+	cout << obj3.k << "\n" << obj4.k << endl;
+}
+
+int main()
+{
+	Class3 obj;
+	Class4 obj2;
+	display(obj, obj2);
+	return 0;		
+}
+
+*/
+
+
+// Pending: Friend Classes & Friend Member Functions.
+
+
+

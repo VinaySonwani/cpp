@@ -1,0 +1,24 @@
+
+find - occurrence
+
+count - total occurrence or existance
+
+binary_search - existance
+lower_bound - existance , element equal or greater than the given, smaller and larger than the given
+upper_bound - existance, element greater than the given, smaller and larger than the given
+
+remove - removing el element using iterator then erase.
+
+partial_short - largest and smallest element
+
+search_n - consecutive occurring element
+
+nth_element - smallest and largest n numbers
+
+equal_range - existance of consecutive appearing e;e;emt
+
+minmax_elelemnt - find min and max element in a container
+
+min_element - smallest element
+
+max_element - largest element

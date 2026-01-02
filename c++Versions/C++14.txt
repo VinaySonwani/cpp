@@ -1,0 +1,2 @@
+
+since C++14 we’re allowed to use auto for parameters (note: in C++20, regular functions are able to use auto for parameters too).

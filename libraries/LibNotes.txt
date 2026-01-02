@@ -1,0 +1,16 @@
+
+When we implement a library, we keep function declarations in the header file and function definition in the
+library source file which gets complied as the .so or DLL file. To use the library, we need the header file and 
+.so or DLL file.
+
+compilation generates- binary file = machine code = object file or object code
+
+Funcion or Class definitions in the library are in the form of object code i.e. they are precompiled. they are also called routines. Library itself could be .so or DLL file.
+
+c’s standard library is in the form of functions. c++’s standard library is in the form of the classes.
+
+C's Header file use .h extension while C++'s header files only use names.
+
+Any library is the collection of header files and .so or DLL files so these files need to be placed in the system for the compiler to use while building the app. this is done while installing IDEs or Command line tools. Independent installers also used.
+
+

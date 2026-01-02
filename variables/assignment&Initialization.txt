@@ -1,0 +1,42 @@
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	// Assignment: Declaring a variable then providing it a value.
+
+	int a;		// Defining a variable
+	a = 1;	// Assigning it a value
+
+	// Initialization: Providing value when declaring.
+	// Initialization Types-
+
+	int a;         	// Default initialization. Initialises with random value.
+	int b = 5;     	// Copy initialization
+	int c( 6 );    	// Direct initialization
+
+	// List initialization or Uniform Initialization or Brace Initialization. C++11 supported. It disallow Narrowing Conversions ( automatic Data 	// Type conversion )
+
+	int d { 7 };		// Direct list initialization
+	int e = { 8 };	// Copy list initialization
+	int f {};		// Value initialization. Initialises with zero in most of the cases. When it happens, it's called the Zero Initialization. 
+
+	// Initialization mistakes
+	
+	int a, b = 5;	// wrong (a is not initialized!)
+
+	int a = 5, b = 5;	// correct
+
+	int a = 5, b = 6;          // copy initialization
+	int c( 7 ), d( 8 );        // direct initialization
+	int e { 9 }, f { 10 };     // direct brace initialization
+	int g = { 9 }, h = { 10 }; // copy brace initialization
+	int i {}, j {};            // value initialization
+}
+
+References: 
+
+	https://www.learncpp.com/cpp-tutorial/variable-assignment-and-initialization/
+
+

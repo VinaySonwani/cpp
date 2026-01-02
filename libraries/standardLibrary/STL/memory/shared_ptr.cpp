@@ -1,0 +1,36 @@
+
+#include <iostream>
+#include <memory>
+using namespace std;
+
+class Rectangle {
+    int length;
+    int breadth;
+
+public:
+    Rectangle(int l, int b)
+    {
+        length = l;
+        breadth = b;
+    }
+
+    int area() { return length * breadth; }
+};
+
+int main()
+{
+    shared_ptr<Rectangle> P1(new Rectangle(10, 5));
+    cout << P1->area() << endl;
+
+    shared_ptr<Rectangle> P2;
+    P2 = P1;
+
+    cout << P2->area() << endl;
+
+    cout << P1->area() << endl;	// OK. Both smart pointers can point to the same class-type simultaneously.
+
+    cout << P1.use_count() << endl;		// Gives the reference count of smart pointers currently referring to the class-type.
+
+    return 0;
+}
+

@@ -1,0 +1,12 @@
+
+/*
+If a header file contains something (fn prototypes, structure definitions,class definitions and variable declarations etc.) that is needed by a source file, then we have to include that hf into that source file.
+
+A source file which calls a function needs fn prttp for calling the fn. If fn prttp is contained in a hdr fl then the src fl must include that hdr fl. Once compiler gets fn prttp, it knows all about that called fn. Now it can look for fn definition in the same src fl or in any other src files.
+
+If a secondary src file contains only fn. dfntn then not necessary to it to include hf. But if it is calling a different fn. which is defined in the same or in another source file then it requires fn prttp and if fn prttp is contained in a hdr fl then the secondary src fl must include that hdr file.
+
+not necessary that when we add a source file then we must have to add a header file for that source file but it all depends upon requirement like if the source file contains a structure, class definition or too many fn. prttps then for readability we add a header file for that src fl and write those fn prttp strctr and cls definitions in that hf otherwise there is no need to to add a hf for that src fl means it is not mandatory.
+
+hf and src fl grp respectively they all are one big file but they are distributed in separate files only for readability.
+*/
