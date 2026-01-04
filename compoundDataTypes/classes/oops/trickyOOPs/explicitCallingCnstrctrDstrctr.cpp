@@ -7,26 +7,27 @@ class Base
 public:
 	Base()
 	{
-		cout << "Base' constructor \n" << endl;
+		cout << "Base's constructor" << endl;
 	}
 	~Base()
 	{
-		cout << "Base' destructor \n" << endl;
+		cout << "Base's destructor" << endl;
 	}
 };
 
 
 int main()
 {
-	Base(); // OK. Calls base constructor & destructor too.
+	Base(); 				// OK. Calls base constructor & immediately calls destructor too.
 
-	Base obj;
-	Base obj2;
+	Base obj2;			
 
-	obj2.~Base(); // OK. Calls base destructor.
+	obj2.~Base(); 			// OK. Calls base destructor. obj2 again calls destructor when goes out of scope.
 
-	Base obj3;
-	// obj3.Base();  // E. Not allowed.
+	Base obj3;			// calls destructor when goes out of scope.
+	// obj3.Base();  		// E. Not allowed.
+
+	cout << "going out of scope==>" << endl;
 
 	return 0;
 }

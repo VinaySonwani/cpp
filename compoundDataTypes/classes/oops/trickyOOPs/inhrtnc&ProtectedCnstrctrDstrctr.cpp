@@ -1,4 +1,5 @@
 
+
 #include <iostream>
 using namespace std;
 
@@ -7,39 +8,37 @@ class Base
 protected:
 	Base()
 	{
-		cout << "Base' constructor \n" << endl;
+		cout << "Base' constructor" << endl;
 	}
 
 	~Base()
 	{
-		cout << "Base' destructor \n" << endl;
-	}
-
-public:
-	void dsply()
-	{
-		Base();
+		cout << "Base' destructor" << endl;
 	}
 };
 
-class Derived : public Base	// Derived is able to inherit as Base's constructor is protected.
+class Derived : public Base			// Derived is able to inherit as Base's constructor is protected.
 {
+public:
 	Derived()
 	{
-		cout << "Derived's constructor \n" << endl;
+		cout << "Derived's constructor" << endl;
 	}
 	~Derived()
 	{
-		cout << "Derived's destructor \n" << endl;
+		cout << "Derived's destructor" << endl;
 	}
 };
 
 
 int main()
 {  
-	Derived *objd = NULL;
-	objd->dsply(); 		// calls base's dsply as derived has no method with this name so compiler checks in the base then.
+	Derived obj2;
 
 	return 0;
 }
+
+
+
+
 

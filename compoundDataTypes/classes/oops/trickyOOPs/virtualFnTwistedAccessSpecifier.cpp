@@ -21,6 +21,11 @@ int main()
 {
 	Base* obj( new Derived );
 
-	//obj -> use( );		// E
-	obj -> use2( );		
+	// obj -> use( );		// E. Bcoz obj is pointing to the Base portion so it first goes to Base class and finds
+					// the method is private so not accessible, since the error. Going to check if any
+					// override exists is skipped.
+	
+	obj -> use2( );		// It calls the Derived's use2 while it's private in derived. ?	
 }
+
+
